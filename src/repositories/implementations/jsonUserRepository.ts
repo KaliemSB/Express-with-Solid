@@ -11,6 +11,10 @@ export class JsonUserRepository implements IUserRepository {
   async save(user: User): Promise<void> {
     this.users.push(user);
   };
+
+  async getAllUser(): Promise<User[]> {
+    return this.users;
+  }
 };
 
 export const newJsonRepository = new JsonUserRepository()

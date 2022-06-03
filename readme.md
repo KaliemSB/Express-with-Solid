@@ -7,6 +7,6 @@ A aplicação deve ser feita usando a seguinte stack.
 A aplicação deve ser capaz de realizar as seguintes tarefas.
 - [x] Cadastrar um usúario.
 - [x] Retornar um usúario pelo email.
-- [] retornar todos os usúarios.
+- [X] retornar todos os usúarios.
 - [] Deletar um usúario.
 - [] Atualizar um usúario.
