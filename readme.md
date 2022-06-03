@@ -8,5 +8,5 @@ A aplicação deve ser capaz de realizar as seguintes tarefas.
 - [x] Cadastrar um usúario.
 - [x] Retornar um usúario pelo email.
 - [X] retornar todos os usúarios.
-- [] Deletar um usúario.
-- [] Atualizar um usúario.
+- [X] Deletar um usúario pelo email.
+- [] Atualizar um usúario pelo email.
