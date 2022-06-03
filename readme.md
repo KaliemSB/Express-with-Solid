@@ -9,3 +9,4 @@ A aplicação deve ser capaz de realizar as seguintes tarefas.
 - [x] Retornar um usúario pelo email.
 - [] retornar todos os usúarios.
 - [] Deletar um usúario.
+- [] Atualizar um usúario.
