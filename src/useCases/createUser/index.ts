@@ -1,8 +1,8 @@
-import { JsonUserRepository } from "../../repositories/implementations/jsonUserRepository";
+import { newJsonRepository } from "../../repositories/implementations/jsonUserRepository";
 import { CreateUserController } from "./createUserController";
 import { CreateUserUseCase } from "./createUserUseCase";
 
-const jsonUserRepository = new JsonUserRepository();
+const jsonUserRepository = newJsonRepository;
 
 const createUserUseCase = new CreateUserUseCase(jsonUserRepository);
 

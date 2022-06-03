@@ -12,3 +12,5 @@ export class JsonUserRepository implements IUserRepository {
     this.users.push(user);
   };
 };
+
+export const newJsonRepository = new JsonUserRepository()
