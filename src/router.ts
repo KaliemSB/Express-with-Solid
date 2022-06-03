@@ -3,6 +3,7 @@ import { createUserContoller } from "./useCases/createUser";
 import { deleteUserController } from "./useCases/deleteUserByEmail";
 import { getAllUserController } from "./useCases/getAllUser";
 import { getUserController } from "./useCases/getUserByEmail";
+import { updateUserByEmailController } from "./useCases/updateUserByEmail";
 
 const router = Router();
 
@@ -20,6 +21,10 @@ router.get('/user/:email', (request, response) => {
 
 router.delete('/user/:email', (request, response) => {
   return deleteUserController.handle(request, response);
+})
+
+router.put('/user/:email', (request, response) => {
+  return updateUserByEmailController.handle(request, response);
 })
 
 export { router };

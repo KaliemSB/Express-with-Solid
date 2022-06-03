@@ -1,4 +1,5 @@
 import { User } from "../../entities/User";
+import { IUpdateUserDTO } from "../../useCases/updateUserByEmail/updateUserDTO";
 import { IUserRepository } from "../IUsersRepository";
 
 export class JsonUserRepository implements IUserRepository {
@@ -22,6 +23,18 @@ export class JsonUserRepository implements IUserRepository {
     this.users.splice(index, 1);
 
     return
+  }
+
+  async updateUserByEmail(email: string, data: IUpdateUserDTO): Promise<User> {
+    const user = this.users.find(user => user.email === email);
+
+    Object.entries(data).forEach(entry => {
+      const [key, value] = entry;
+      
+      user[key] = value;
+    });
+
+    return user;
   }
 };
 
