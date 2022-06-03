@@ -30,6 +30,8 @@ export class JsonUserRepository implements IUserRepository {
 
     Object.entries(data).forEach(entry => {
       const [key, value] = entry;
+
+      if (!value) return
       
       user[key] = value;
     });
